@@ -1,0 +1,40 @@
+{
+  "version": 2,
+  "name": "wasifali-web-to-apk",
+  "functions": {
+    "api/generate.js": {
+      "maxDuration": 30,
+      "memory": 1024
+    }
+  },
+  "routes": [
+    {
+      "src": "/api/generate",
+      "dest": "/api/generate.js",
+      "methods": ["POST", "GET", "OPTIONS"]
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/api/generate.js"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/api/(.*)",
+      "headers": [
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        },
+        {
+          "key": "Access-Control-Allow-Methods",
+          "value": "GET, POST, OPTIONS"
+        },
+        {
+          "key": "Access-Control-Allow-Headers",
+          "value": "Content-Type"
+        }
+      ]
+    }
+  ]
+}
