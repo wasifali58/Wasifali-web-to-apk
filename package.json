@@ -1,16 +1,7 @@
 {
   "name": "wasifali-web-to-apk",
-  "version": "1.0.0",
-  "description": "Wasifali Web to APK Converter - Convert any website to Android APK instantly",
+  "version": "2.0.0",
+  "description": "Web to APK Converter API by WASIF ALI",
   "type": "module",
-  "main": "api/generate.js",
-  "author": "WASIF ALI",
-  "license": "MIT",
-  "keywords": ["apk", "android", "converter", "web-to-apk", "wasifali"],
-  "scripts": {
-    "dev": "node api/generate.js"
-  },
-  "engines": {
-    "node": ">=18.x"
-  }
+  "main": "api/generate.js"
 }
